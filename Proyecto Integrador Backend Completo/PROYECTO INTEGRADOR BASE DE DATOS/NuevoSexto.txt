@@ -1,0 +1,517 @@
+
+--secuencia PROYECTO--------------------------------------------------------------------------------------------------------
+---Primero
+
+CREATE SEQUENCE proyecto_id_seq START WITH 101 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER proyecto_id_trigger
+BEFORE INSERT ON PROYECTO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_PROYECTO IS NULL THEN
+    SELECT proyecto_id_seq.NEXTVAL INTO :NEW.ID_PROYECTO FROM dual;
+  END IF;
+END;
+
+--secuencia Escuela--------------------------------------------------------------------------------------------------------
+---Primero
+CREATE SEQUENCE escuela_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER escuela_id_trigger
+BEFORE INSERT ON ESCUELA
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ESCUELA IS NULL THEN
+    SELECT escuela_id_seq.NEXTVAL INTO :NEW.ID_ESCUELA FROM dual;
+  END IF;
+END;
+
+--Secuencia Semestre--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE semestre_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER semestre_id_trigger
+BEFORE INSERT ON SEMESTRE
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_SEMESTRE IS NULL THEN
+    SELECT semestre_id_seq.NEXTVAL INTO :NEW.ID_SEMESTRE FROM dual;
+  END IF;
+END;
+
+
+
+--Secuencia Recurso--------------------------------------------------------------------------------------------------------
+CREATE SEQUENCE recurso_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER recurso_id_trigger
+BEFORE INSERT ON RECURSO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_RECURSO IS NULL THEN
+    SELECT recurso_id_seq.NEXTVAL INTO :NEW.ID_RECURSO FROM dual;
+  END IF;
+END;
+
+
+
+
+
+
+
+
+--Secuencia Estado--------------------------------------------------------------------------------------------------------
+CREATE SEQUENCE estado_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER estado_id_trigger
+BEFORE INSERT ON ESTADO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ESTADO IS NULL THEN
+    SELECT estado_id_seq.NEXTVAL INTO :NEW.ID_ESTADO FROM dual;
+  END IF;
+END;
+
+
+
+
+
+
+
+--Secuencia TIPO_DE_CONVENIO--------------------------------------------------------------------------------------------------------
+CREATE SEQUENCE tipo_de_convenio_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER tipo_de_convenio_id_trigger
+BEFORE INSERT ON TIPO_DE_CONVENIO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_TIPO_DE_CONVENIO IS NULL THEN
+    SELECT tipo_de_convenio_id_seq.NEXTVAL INTO :NEW.ID_TIPO_DE_CONVENIO FROM dual;
+  END IF;
+END;
+
+
+
+
+
+
+--Secuencia TIPO_DE_CONVENIO--------------------------------------------------------------------------------------------------------
+CREATE SEQUENCE curso_articulado_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER curso_articulado_id_trigger
+BEFORE INSERT ON CURSO_ARTICULADO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_CURSO_ARTICULADO IS NULL THEN
+    SELECT curso_articulado_id_seq.NEXTVAL INTO :NEW.ID_CURSO_ARTICULADO FROM dual;
+  END IF;
+END;
+
+
+
+
+
+
+
+--Secuencia CICLO--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE ciclo_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER ciclo_id_trigger
+BEFORE INSERT ON CICLO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_CICLO IS NULL THEN
+    SELECT ciclo_id_seq.NEXTVAL INTO :NEW.ID_CICLO FROM dual;
+  END IF;
+END;
+
+
+--Secuencia Usuario--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE usuario_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER usuario_id_trigger
+BEFORE INSERT ON USUARIO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_USUARIO IS NULL THEN
+    SELECT usuario_id_seq.NEXTVAL INTO :NEW.ID_USUARIO FROM dual;
+  END IF;
+END;
+
+
+
+
+--Secuencia rol_sistema--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE rol_sistema_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER rol_sistema_id_trigger
+BEFORE INSERT ON ROL_SISTEMA
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ROL_SISTEMA IS NULL THEN
+    SELECT rol_sistema_id_seq.NEXTVAL INTO :NEW.ID_ROL_SISTEMA FROM dual;
+  END IF;
+END;
+
+
+
+
+--Secuencia rol_sistema_accesos--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE rol_sistema_accesos_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER rol_sistema_accesos_id_trigger
+BEFORE INSERT ON ROL_SISTEMA_ACCESOS
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ROL_SISTEMA_ACCESOS IS NULL THEN
+    SELECT rol_sistema_accesos_id_seq.NEXTVAL INTO :NEW.ID_ROL_SISTEMA_ACCESOS FROM dual;
+  END IF;
+END;
+
+
+
+
+
+--Secuencia rol_proyecto--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE rol_proyecto_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER rol_proyecto_id_trigger
+BEFORE INSERT ON ROL_PROYECTO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ROL_PROYECTO IS NULL THEN
+    SELECT rol_proyecto_id_seq.NEXTVAL INTO :NEW.ID_ROL_PROYECTO FROM dual;
+  END IF;
+END;
+
+
+
+--Secuencia rol_proyecto_encargado--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE rol_proyecto_encargado_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER rol_proyecto_encargado_id_trigger
+BEFORE INSERT ON ROL_PROYECTO_ENCARGADO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ROL_PROYECTO_ENCARGADO IS NULL THEN
+    SELECT rol_proyecto_encargado_id_seq.NEXTVAL INTO :NEW.ID_ROL_PROYECTO_ENCARGADO FROM dual;
+  END IF;
+END;
+
+
+
+--Secuencia rol_negocio--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE rol_negocio_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER rol_negocio_id_trigger
+BEFORE INSERT ON ROL_NEGOCIO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ROL_NEGOCIO IS NULL THEN
+    SELECT rol_negocio_id_seq.NEXTVAL INTO :NEW.ID_ROL_NEGOCIO FROM dual;
+  END IF;
+END;
+
+
+
+--Secuencia plantilla--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE plantilla_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER plantilla_id_trigger
+BEFORE INSERT ON PLANTILLA
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_PLANTILLA IS NULL THEN
+    SELECT plantilla_id_seq.NEXTVAL INTO :NEW.ID_PLANTILLA FROM dual;
+  END IF;
+END;
+
+
+
+
+--Secuencia persona--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE persona_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER persona_id_trigger
+BEFORE INSERT ON PERSONA
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_PERSONA IS NULL THEN
+    SELECT persona_id_seq.NEXTVAL INTO :NEW.ID_PERSONA FROM dual;
+  END IF;
+END;
+
+
+
+
+--Secuencia usuario_accesos--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE usuario_accesos_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER usuario_accesos_id_trigger
+BEFORE INSERT ON USUARIO_ACCESOS
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_USUARIO_ACCESOS IS NULL THEN
+    SELECT usuario_accesos_id_seq.NEXTVAL INTO :NEW.ID_USUARIO_ACCESOS FROM dual;
+  END IF;
+END;
+
+
+
+
+--Secuencia participante--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE participante_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER participante_id_trigger
+BEFORE INSERT ON PARTICIPANTE
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_PARTICIPANTE IS NULL THEN
+    SELECT participante_id_seq.NEXTVAL INTO :NEW.ID_PARTICIPANTE FROM dual;
+  END IF;
+END;
+
+
+
+
+--Secuencia GRUPO_UNIV--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE grupo_univ_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER grupo_univ_id_trigger
+BEFORE INSERT ON GRUPO_UNIV
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_GRUPO_UNIV IS NULL THEN
+    SELECT grupo_univ_id_seq.NEXTVAL INTO :NEW.ID_GRUPO_UNIV FROM dual;
+  END IF;
+END;
+
+
+
+    
+--Secuencia facultad--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE facultad_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER facultad_id_trigger
+BEFORE INSERT ON FACULTAD
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_FACULTAD IS NULL THEN
+    SELECT facultad_id_seq.NEXTVAL INTO :NEW.ID_FACULTAD FROM dual;
+  END IF;
+END;
+
+
+
+
+--Secuencia ESTUDIANTE--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE estudiante_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER estudiante_id_trigger
+BEFORE INSERT ON ESTUDIANTE
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ESTUDIANTE IS NULL THEN
+    SELECT estudiante_id_seq.NEXTVAL INTO :NEW.ID_ESTUDIANTE FROM dual;
+  END IF;
+END;
+
+
+
+
+--Secuencia encargado--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE encargado_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER encargado_id_trigger
+BEFORE INSERT ON ENCARGADO
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ENCARGADO IS NULL THEN
+    SELECT encargado_id_seq.NEXTVAL INTO :NEW.ID_ENCARGADO FROM dual;
+  END IF;
+END;
+
+
+
+
+--Secuencia DOCENTE--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE docente_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER docente_id_trigger
+BEFORE INSERT ON DOCENTE
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_DOCENTE IS NULL THEN
+    SELECT docente_id_seq.NEXTVAL INTO :NEW.ID_DOCENTE FROM dual;
+  END IF;
+END;
+
+
+
+
+
+
+
+
+
+--Secuencia ACTIVIDAD--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE actividad_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER actividad_id_trigger
+BEFORE INSERT ON ACTIVIDAD
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ACTIVIDAD IS NULL THEN
+    SELECT actividad_id_seq.NEXTVAL INTO :NEW.ID_ACTIVIDAD FROM dual;
+  END IF;
+END;
+
+
+
+
+
+
+--Secuencia ACTIVIDAD_PARTICIPANTE--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE actividad_participante_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER actividad_participante_id_trigger
+BEFORE INSERT ON ACTIVIDAD_PARTICIPANTE
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ACTIVIDAD_PARTICIPANTE IS NULL THEN
+    SELECT actividad_participante_id_seq.NEXTVAL INTO :NEW.ID_ACTIVIDAD_PARTICIPANTE FROM dual;
+  END IF;
+END;
+
+
+
+
+
+
+--Secuencia accesos--------------------------------------------------------------------------------------------------------
+
+CREATE SEQUENCE accesos_id_seq START WITH 100 INCREMENT BY 1;
+
+
+--segundo
+CREATE OR REPLACE TRIGGER accesos_id_trigger
+BEFORE INSERT ON ACCESOS
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_ACCESOS IS NULL THEN
+    SELECT accesos_id_seq.NEXTVAL INTO :NEW.ID_ACCESOS FROM dual;
+  END IF;
+END;
+
+---------------------------
+
+
+CREATE SEQUENCE usuario_rol_sistema_id_seq START WITH 1 INCREMENT BY 1;
+
+
+
+CREATE OR REPLACE TRIGGER usuario_rol_sistema_id_trigger
+BEFORE INSERT ON USUARIO_ROL_SISTEMA
+FOR EACH ROW
+BEGIN
+  -- Verificar si el valor del ID_PROYECTO es NULL o no se ha proporcionado
+  IF :NEW.ID_USUARIO_ROL_SISTEMA IS NULL THEN
+    SELECT usuario_rol_sistema_id_seq.NEXTVAL INTO :NEW.ID_USUARIO_ROL_SISTEMA FROM dual;
+  END IF;
+END;
+
+COMMIT;

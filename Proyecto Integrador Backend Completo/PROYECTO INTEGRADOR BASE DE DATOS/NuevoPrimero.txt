@@ -1,0 +1,15 @@
+create tablespace PRO1
+DATAFILE 'C:\APP\ALEXIS\ORADATA\ORCL\PRO1.dbf' size 400M;
+
+-----------------------------------------------------------tabla space para los PK
+
+create tablespace PRO2
+DATAFILE 'C:\APP\ALEXIS\ORADATA\ORCL\PRO2.dbf' size 400M;
+
+-----------------------------------------------------------tabla space para los FK
+
+
+SELECT tablespace_name, file_name
+FROM dba_data_files;
+
+-----------------------------------------------------------PARA VER TODOS LOS TSP

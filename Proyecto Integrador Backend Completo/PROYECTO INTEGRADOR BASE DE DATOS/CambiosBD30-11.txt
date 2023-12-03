@@ -1,0 +1,19 @@
+
+
+
+
+
+ALTER TABLE actividad_participante
+ADD asistencia NUMBER(1);
+
+ALTER TABLE participante
+ADD horas NUMBER;
+
+UPDATE participante
+SET horas = 8;
+
+UPDATE actividad_participante
+SET asistencia = 0;
+
+
+commit;

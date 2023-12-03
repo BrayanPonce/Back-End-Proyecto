@@ -1,0 +1,1009 @@
+
+
+
+-- Insertar 10 ejemplos de proyectos en distintos campos académicos
+-- con nombres de coordinadores aleatorios
+INSERT INTO PROYECTO VALUES
+  (1, 'Proyecto Desarrollo de Software', 'PROG001', 'Bruno Mesa', TO_DATE('2023-11-15', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Desarrollo de una aplicación móvil para la educación', 'Creación de una plataforma educativa en línea', 15000, 'Informe de desarrollo de software', 1, 5, 2, 6, 11, 36);
+INSERT INTO PROYECTO VALUES  
+  (2, 'Proyecto Ingeniería Ambiental', 'PROG002', 'Montserrat Martínez', TO_DATE('2023-10-30', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Gestión sostenible de residuos sólidos', 'Implementación de un sistema de reciclaje comunitario', 12000, 'Informe de gestión de residuos', 3, 3, 1, 3, 18, 42);
+INSERT INTO PROYECTO VALUES  
+  (3, 'Proyecto Medicina Preventiva', 'PROG003', 'Simón Tello', TO_DATE('2023-10-25', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Promoción de hábitos saludables', 'Campañas de prevención de enfermedades', 18000, 'Informe de promoción de salud', 4, 2, 3, 8, 6, 27);
+INSERT INTO PROYECTO VALUES  
+  (4, 'Proyecto Energías Renovables', 'PROG004', 'María Paula Llamas', TO_DATE('2023-11-10', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Energía solar para comunidades rurales', 'Instalación de paneles solares en áreas sin acceso a la red eléctrica', 14000, 'Informe de energías limpias', 5, 7, 2, 9, 4, 14);
+ INSERT INTO PROYECTO VALUES 
+  (5, 'Proyecto Educación Inclusiva', 'PROG005', 'Samantha Samaniego', TO_DATE('2023-11-05', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Apoyo a estudiantes con discapacidad', 'Desarrollo de materiales didácticos inclusivos', 9000, 'Informe de educación inclusiva', 6, 6, 1, 10, 15, 9);
+INSERT INTO PROYECTO VALUES  
+  (6, 'Proyecto Agricultura Sostenible', 'PROG006', 'Abigail López', TO_DATE('2023-11-20', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Técnicas de cultivo ecológicas', 'Promoción de la agricultura sostenible', 16000, 'Informe de agricultura sostenible', 2, 4, 3, 5, 17, 33);
+ INSERT INTO PROYECTO VALUES 
+  (7, 'Proyecto Reducción de Desperdicio Alimentario', 'PROG007', 'Paulina Bétancourt', TO_DATE('2023-11-12', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Prevención del desperdicio de alimentos', 'Programas de donación de alimentos', 11000, 'Informe de reducción de desperdicio', 8, 8, 2, 7, 8, 25);
+ INSERT INTO PROYECTO VALUES 
+  (8, 'Proyecto Innovación en Ingeniería', 'PROG008', 'Jesús Páez', TO_DATE('2023-11-03', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Desarrollo de tecnologías limpias', 'Investigación y desarrollo de tecnologías sostenibles', 19000, 'Informe de innovación tecnológica', 9, 9, 1, 11, 22, 12);
+ INSERT INTO PROYECTO VALUES 
+  (9, 'Proyecto Educación Artística', 'PROG009', 'Renata Ballesteros', TO_DATE('2023-11-08', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Promoción de las artes en la educación', 'Talleres y actividades artísticas para estudiantes', 10000, 'Informe de educación artística', 7, 10, 3, 4, 14, 11);
+INSERT INTO PROYECTO VALUES  
+  (10, 'Proyecto Desarrollo Comunitario', 'PROG010', 'Valentina Godoy', TO_DATE('2023-11-25', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Mejora de infraestructuras locales', 'Participación activa de la comunidad en proyectos de desarrollo', 17000, 'Informe de desarrollo comunitario', 10, 1,2,3,4,5);
+
+-- Proyectos del 11 al 20
+INSERT INTO PROYECTO VALUES
+  (11, 'Proyecto Medio Ambiente en la Educación', 'PROG011', 'Montserrat Martínez', TO_DATE('2023-11-01', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Educación sobre conservación ambiental', 'Integración de temas ecológicos en el currículo escolar', 12000, 'Informe de educación ambiental', 1, 2, 1, 7, 15, 22);
+
+INSERT INTO PROYECTO VALUES
+  (12, 'Proyecto Energía Eólica en Comunidades', 'PROG012', 'Simón Tello', TO_DATE('2023-11-03', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Generación de energía eólica', 'Instalación de aerogeneradores en zonas rurales', 14000, 'Informe de energía eólica', 2, 4, 2, 8, 17, 31);
+
+INSERT INTO PROYECTO VALUES
+  (13, 'Proyecto Salud Pública', 'PROG013', 'María Paula Llamas', TO_DATE('2023-11-05', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Promoción de la salud comunitaria', 'Campañas de vacunación y prevención de enfermedades', 16000, 'Informe de salud pública', 3, 3, 1, 9, 19, 27);
+
+INSERT INTO PROYECTO VALUES
+  (14, 'Proyecto Reciclaje en Escuelas', 'PROG014', 'Samantha Samaniego', TO_DATE('2023-11-07', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Educación sobre reciclaje', 'Implementación de programas de reciclaje en escuelas', 11000, 'Informe de reciclaje educativo', 4, 6, 3, 5, 11, 42);
+
+INSERT INTO PROYECTO VALUES
+  (15, 'Proyecto Agricultura Sostenible en Comunidades', 'PROG015', 'Abigail López', TO_DATE('2023-11-09', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Prácticas agrícolas ecológicas', 'Fomento de la agricultura sostenible en áreas rurales', 18000, 'Informe de agricultura sostenible', 5, 8, 2, 4, 13, 36);
+
+INSERT INTO PROYECTO VALUES
+  (16, 'Proyecto Alimentación Saludable en Escuelas', 'PROG016', 'Paulina Bétancourt', TO_DATE('2023-11-11', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Promoción de la alimentación saludable', 'Implementación de menús nutritivos en escuelas', 15000, 'Informe de alimentación saludable', 6, 2, 2, 7, 8, 21);
+
+INSERT INTO PROYECTO VALUES
+  (17, 'Proyecto Innovación en Energías Renovables', 'PROG017', 'Jesús Páez', TO_DATE('2023-11-13', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Desarrollo de tecnologías limpias', 'Investigación y desarrollo de energías sostenibles', 17000, 'Informe de innovación energética', 7, 9, 1, 6, 20, 47);
+
+INSERT INTO PROYECTO VALUES
+  (18, 'Proyecto Arte en la Comunidad', 'PROG018', 'Renata Ballesteros', TO_DATE('2023-11-15', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Promoción de las artes en la comunidad', 'Talleres y exposiciones artísticas', 13000, 'Informe de arte comunitario', 8, 1, 3, 8, 16, 39);
+
+INSERT INTO PROYECTO VALUES
+  (19, 'Proyecto Desarrollo de Parques Urbanos', 'PROG019', 'Valentina Godoy', TO_DATE('2023-11-17', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Mejora de áreas verdes en la ciudad', 'Creación de parques y espacios recreativos', 11000, 'Informe de desarrollo de parques', 9, 5, 2, 11, 15, 23);
+
+INSERT INTO PROYECTO VALUES
+  (20, 'Proyecto Ciencia Ciudadana', 'PROG020', 'Emma Valles', TO_DATE('2023-11-19', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Participación de la comunidad en investigaciones científicas', 'Recopilación de datos para proyectos científicos', 14000, 'Informe de ciencia ciudadana', 10, 10, 1, 10, 21, 45);
+
+
+-- Proyectos del 21 al 30
+INSERT INTO PROYECTO VALUES
+  (21, 'Proyecto Conservación de Ecosistemas', 'PROG021', 'Mariana Colón', TO_DATE('2023-11-21', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Preservación de áreas naturales', 'Restauración de hábitats en peligro', 15000, 'Informe de conservación ecológica', 1, 7, 2, 9, 12, 29);
+
+INSERT INTO PROYECTO VALUES
+  (22, 'Proyecto Tecnología para la Educación', 'PROG022', 'Ximena Urrutia', TO_DATE('2023-11-23', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Integración de tecnología en las aulas', 'Desarrollo de plataformas educativas digitales', 18000, 'Informe de tecnología educativa', 2, 3, 1, 6, 14, 41);
+
+INSERT INTO PROYECTO VALUES
+  (23, 'Proyecto Turismo Sustentable', 'PROG023', 'Luna Frías', TO_DATE('2023-11-25', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Promoción del turismo ecológico', 'Desarrollo de rutas turísticas sostenibles', 16000, 'Informe de turismo sustentable', 3, 2, 3, 8, 13, 38);
+
+INSERT INTO PROYECTO VALUES
+  (24, 'Proyecto Alimentación Infantil', 'PROG024', 'Luna Ríos', TO_DATE('2023-11-27', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Nutrición para niños en riesgo', 'Programas de apoyo alimentario para niños', 11000, 'Informe de alimentación infantil', 4, 6, 1, 5, 17, 24);
+
+INSERT INTO PROYECTO VALUES
+  (25, 'Proyecto Energía Solar Residencial', 'PROG025', 'Ricardo Ortega', TO_DATE('2023-11-29', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Uso de energía solar en viviendas', 'Instalación de paneles solares en hogares', 14000, 'Informe de energía solar residencial', 5, 5, 2, 10, 18, 37);
+
+INSERT INTO PROYECTO VALUES
+  (26, 'Proyecto Arte en Espacios Públicos', 'PROG026', 'Ariadna Sanabria', TO_DATE('2023-12-01', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Integración de arte en áreas urbanas', 'Creación de murales y esculturas públicas', 13000, 'Informe de arte en espacios públicos', 6, 8, 3, 7, 16, 35);
+
+INSERT INTO PROYECTO VALUES
+  (27, 'Proyecto Educación en Línea', 'PROG027', 'Juana Venegas', TO_DATE('2023-12-03', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Formación en línea para adultos', 'Cursos en línea para la comunidad', 17000, 'Informe de educación en línea', 7, 4, 1, 11, 20, 43);
+
+INSERT INTO PROYECTO VALUES
+  (28, 'Proyecto Movilidad Sostenible', 'PROG028', 'Jesús Henríquez', TO_DATE('2023-12-05', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Promoción del transporte ecológico', 'Creación de rutas de ciclismo', 16000, 'Informe de movilidad sostenible', 8, 9, 2, 6, 10, 28);
+
+INSERT INTO PROYECTO VALUES
+  (29, 'Proyecto Recuperación de Ríos', 'PROG029', 'Fabiana Maya', TO_DATE('2023-12-07', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Limpieza y restauración de ríos', 'Programas de limpieza de cuerpos de agua', 12000, 'Informe de recuperación de ríos', 9, 1, 3, 9, 19, 30);
+
+INSERT INTO PROYECTO VALUES
+  (30, 'Proyecto Educación Ambiental en Escuelas', 'PROG030', 'Miranda Márquez', TO_DATE('2023-12-09', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Concienciación sobre el medio ambiente', 'Talleres de educación ecológica en escuelas', 11000, 'Informe de educación ambiental escolar', 10, 7, 1, 7, 11, 33);
+
+-- Proyectos del 31 al 40
+INSERT INTO PROYECTO VALUES
+  (31, 'Proyecto Conservación de Bosques', 'PROG031', 'Cristóbal Paredes', TO_DATE('2023-12-11', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Preservación de áreas boscosas', 'Reforestación y protección de bosques', 14000, 'Informe de conservación de bosques', 1, 5, 2, 8, 16, 26);
+
+INSERT INTO PROYECTO VALUES
+  (32, 'Proyecto Agua Potable en Comunidades', 'PROG032', 'Ana Guerra', TO_DATE('2023-12-13', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Acceso a agua potable', 'Construcción de pozos y sistemas de purificación', 12000, 'Informe de agua potable', 2, 3, 1, 9, 22, 47);
+
+INSERT INTO PROYECTO VALUES
+  (33, 'Proyecto Desarrollo Tecnológico Rural', 'PROG033', 'Lucía Pérez', TO_DATE('2023-12-15', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Tecnología en zonas rurales', 'Implementación de acceso a Internet en áreas remotas', 15000, 'Informe de desarrollo tecnológico', 3, 6, 3, 6, 10, 34);
+
+INSERT INTO PROYECTO VALUES
+  (34, 'Proyecto Rescate de Animales', 'PROG034', 'Eduardo Silva', TO_DATE('2023-12-17', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Salvamento de animales en peligro', 'Refugios y cuidado de animales abandonados', 13000, 'Informe de rescate de animales', 4, 10, 2, 10, 17, 28);
+
+INSERT INTO PROYECTO VALUES
+  (35, 'Proyecto Salud Mental', 'PROG035', 'Carla Herrera', TO_DATE('2023-12-19', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Apoyo a la salud mental', 'Servicios de asesoramiento y apoyo emocional', 11000, 'Informe de salud mental', 5, 7, 1, 7, 18, 35);
+
+INSERT INTO PROYECTO VALUES
+  (36, 'Proyecto Agricultura Familiar', 'PROG036', 'Daniel Torres', TO_DATE('2023-12-21', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Apoyo a pequeños agricultores', 'Técnicas de cultivo y comercialización', 16000, 'Informe de agricultura familiar', 6, 9, 3, 8, 13, 42);
+
+INSERT INTO PROYECTO VALUES
+  (37, 'Proyecto Educación Tecnológica', 'PROG037', 'Isabella Sánchez', TO_DATE('2023-12-23', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Formación en tecnología', 'Cursos de programación y desarrollo web', 18000, 'Informe de educación tecnológica', 7, 2, 1, 9, 20, 48);
+
+INSERT INTO PROYECTO VALUES
+  (38, 'Proyecto Movilidad Urbana', 'PROG038', 'Antonio Jiménez', TO_DATE('2023-12-25', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Mejora de transporte público', 'Desarrollo de rutas y medios de transporte sostenibles', 14000, 'Informe de movilidad urbana', 8, 1, 2, 10, 15, 27);
+
+INSERT INTO PROYECTO VALUES
+  (39, 'Proyecto Educación en Emprendimiento', 'PROG039', 'Marta Ramírez', TO_DATE('2023-12-27', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Fomento del espíritu emprendedor', 'Talleres de creación de negocios', 12000, 'Informe de educación emprendedora', 9, 8, 3, 7, 12, 31);
+
+INSERT INTO PROYECTO VALUES
+  (40, 'Proyecto Reciclaje Electrónico', 'PROG040', 'Alejandro Torres', TO_DATE('2023-12-29', 'YYYY-MM-DD'), TO_DATE('2023-12-31', 'YYYY-MM-DD'), 'Reciclaje de dispositivos electrónicos', 'Recolección y reciclaje de electrónicos', 15000, 'Informe de reciclaje electrónico', 10, 4, 1, 8, 14, 46);
+
+
+-- Proyectos del 41 al 50
+INSERT INTO PROYECTO VALUES
+  (41, 'Proyecto Investigación en Ciencias Sociales', 'PROG041', 'Ana María Cordero', TO_DATE('2024-01-02', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Estudio de tendencias sociales', 'Investigación en ciencias sociales', 17000, 'Informe de investigación en ciencias sociales', 1, 10, 2, 11, 10, 30);
+
+INSERT INTO PROYECTO VALUES
+  (42, 'Proyecto Rehabilitación de Parques', 'PROG042', 'David Rosario', TO_DATE('2024-01-04', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Mejora de espacios públicos', 'Restauración de parques y áreas verdes', 14000, 'Informe de rehabilitación de parques', 2, 2, 1, 9, 15, 25);
+
+INSERT INTO PROYECTO VALUES
+  (43, 'Proyecto Ayuda a Personas Mayores', 'PROG043', 'Laura Guzmán', TO_DATE('2024-01-06', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Apoyo a la tercera edad', 'Programas de atención y compañía', 13000, 'Informe de ayuda a personas mayores', 3, 5, 3, 10, 17, 37);
+
+INSERT INTO PROYECTO VALUES
+  (44, 'Proyecto Tecnología para Personas con Discapacidad', 'PROG044', 'Carlos Torres', TO_DATE('2024-01-08', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Acceso a la tecnología', 'Desarrollo de aplicaciones para personas con discapacidad', 16000, 'Informe de tecnología para discapacidad', 4, 8, 2, 8, 12, 29);
+
+INSERT INTO PROYECTO VALUES
+  (45, 'Proyecto Educación Musical en Escuelas', 'PROG045', 'María López', TO_DATE('2024-01-10', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Fomento de la educación musical', 'Clases de música en escuelas', 12000, 'Informe de educación musical', 5, 1, 1, 7, 16, 35);
+
+INSERT INTO PROYECTO VALUES
+  (46, 'Proyecto Reducción de Contaminación del Aire', 'PROG046', 'Ricardo Cordero', TO_DATE('2024-01-12', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Control de la contaminación del aire', 'Medidas para reducir emisiones', 18000, 'Informe de reducción de contaminación', 6, 7, 3, 8, 14, 41);
+
+INSERT INTO PROYECTO VALUES
+  (47, 'Proyecto Apoyo a Víctimas de Desastres Naturales', 'PROG047', 'Camila Silva', TO_DATE('2024-01-14', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Ayuda a afectados por desastres', 'Asistencia a comunidades damnificadas', 14000, 'Informe de apoyo a víctimas', 7, 3, 2, 9, 18, 33);
+
+INSERT INTO PROYECTO VALUES
+  (48, 'Proyecto Educación Ambiental en Escuelas', 'PROG048', 'Diego Rodríguez', TO_DATE('2024-01-16', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Concienciación sobre el medio ambiente', 'Talleres de educación ecológica en escuelas', 12000, 'Informe de educación ambiental escolar', 8, 6, 1, 6, 10, 28);
+
+INSERT INTO PROYECTO VALUES
+  (49, 'Proyecto Reforestación Urbana', 'PROG049', 'Ana Jiménez', TO_DATE('2024-01-18', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Plantación de árboles en áreas urbanas', 'Creación de espacios verdes en la ciudad', 16000, 'Informe de reforestación urbana', 9, 9, 3, 11, 15, 45);
+
+INSERT INTO PROYECTO VALUES
+  (50, 'Proyecto Desarrollo de Aplicaciones Móviles', 'PROG050', 'Sofía Ramírez', TO_DATE('2024-01-20', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Creación de aplicaciones móviles', 'Desarrollo de aplicaciones para la comunidad', 17000, 'Informe de desarrollo de aplicaciones', 10, 5, 2, 7, 11, 36);
+
+-- Proyectos del 51 al 60
+INSERT INTO PROYECTO VALUES
+  (51, 'Proyecto Energía Eólica', 'PROG051', 'Lucas Soto', TO_DATE('2024-01-22', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Generación de energía eólica', 'Instalación de aerogeneradores', 15000, 'Informe de energía eólica', 1, 2, 1, 8, 13, 41);
+
+INSERT INTO PROYECTO VALUES
+  (52, 'Proyecto Salud Infantil', 'PROG052', 'Valeria Gómez', TO_DATE('2024-01-24', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Cuidado de la salud de niños', 'Programas de atención médica infantil', 13000, 'Informe de salud infantil', 2, 4, 2, 10, 20, 38);
+
+INSERT INTO PROYECTO VALUES
+  (53, 'Proyecto Desarrollo Rural Sostenible', 'PROG053', 'Miguel Delgado', TO_DATE('2024-01-26', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Promoción de desarrollo rural', 'Fomento de técnicas agrícolas sostenibles', 14000, 'Informe de desarrollo rural', 3, 6, 1, 9, 11, 30);
+
+INSERT INTO PROYECTO VALUES
+  (54, 'Proyecto Acceso a Educación en Línea', 'PROG054', 'Andrea Cruz', TO_DATE('2024-01-28', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Educación en línea para todos', 'Conexión y dispositivos para estudiantes', 16000, 'Informe de acceso a educación en línea', 4, 9, 2, 11, 19, 26);
+
+INSERT INTO PROYECTO VALUES
+  (55, 'Proyecto Nutrición Infantil', 'PROG055', 'Carlos Mendoza', TO_DATE('2024-01-30', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Alimentación saludable para niños', 'Programas de nutrición infantil', 12000, 'Informe de nutrición infantil', 5, 8, 3, 8, 12, 35);
+
+INSERT INTO PROYECTO VALUES
+  (56, 'Proyecto Desarrollo de Energía Solar', 'PROG056', 'Sara Torres', TO_DATE('2024-02-01', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Generación de energía solar', 'Instalación de paneles solares', 14000, 'Informe de energía solar', 6, 7, 1, 10, 16, 44);
+
+INSERT INTO PROYECTO VALUES
+  (57, 'Proyecto Reciclaje de Plásticos', 'PROG057', 'Javier Sánchez', TO_DATE('2024-02-03', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Reciclaje de plásticos', 'Recolección y reciclaje de plásticos', 13000, 'Informe de reciclaje de plásticos', 7, 3, 2, 7, 21, 39);
+
+INSERT INTO PROYECTO VALUES
+  (58, 'Proyecto Cultura y Arte Comunitario', 'PROG058', 'Lorena Pérez', TO_DATE('2024-02-05', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Promoción de la cultura y el arte', 'Talleres y eventos artísticos', 15000, 'Informe de cultura y arte', 8, 1, 3, 9, 17, 22);
+
+INSERT INTO PROYECTO VALUES
+  (59, 'Proyecto Acceso a Internet en Escuelas', 'PROG059', 'Fernando Ruiz', TO_DATE('2024-02-07', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Conexión a Internet en instituciones educativas', 'Instalación de redes y computadoras', 12000, 'Informe de acceso a Internet en escuelas', 9, 5, 1, 8, 15, 36);
+
+INSERT INTO PROYECTO VALUES
+  (60, 'Proyecto Investigación Científica', 'PROG060', 'Patricia Morales', TO_DATE('2024-02-09', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Investigación en diversas áreas científicas', 'Estudios científicos y experimentos', 14000, 'Informe de investigación científica', 10, 4, 2, 10, 13, 32);
+
+-- Proyectos del 61 al 70
+INSERT INTO PROYECTO VALUES
+  (61, 'Proyecto Desarrollo de Aplicaciones Web', 'PROG061', 'Alejandro Torres', TO_DATE('2024-02-11', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Creación de aplicaciones web', 'Desarrollo de sitios web y aplicaciones', 16000, 'Informe de desarrollo de aplicaciones web', 1, 8, 1, 7, 12, 42);
+
+INSERT INTO PROYECTO VALUES
+  (62, 'Proyecto Asistencia Legal Comunitaria', 'PROG062', 'Valentina Godoy', TO_DATE('2024-02-13', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Apoyo legal a la comunidad', 'Servicios de asesoría legal', 13000, 'Informe de asistencia legal comunitaria', 2, 7, 2, 8, 15, 37);
+
+INSERT INTO PROYECTO VALUES
+  (63, 'Proyecto Educación en Tecnología', 'PROG063', 'Diego Rodríguez', TO_DATE('2024-02-15', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Formación en tecnología', 'Cursos y talleres tecnológicos', 15000, 'Informe de educación en tecnología', 3, 6, 3, 9, 19, 31);
+
+INSERT INTO PROYECTO VALUES
+  (64, 'Proyecto Salud Mental en Comunidades', 'PROG064', 'Mariana Colón', TO_DATE('2024-02-17', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Promoción de la salud mental', 'Servicios de apoyo psicológico', 14000, 'Informe de salud mental comunitaria', 4, 5, 1, 10, 11, 29);
+
+INSERT INTO PROYECTO VALUES
+  (65, 'Proyecto Reducción de Pobreza', 'PROG065', 'Ximena Urrutia', TO_DATE('2024-02-19', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Programas de reducción de pobreza', 'Ayuda a familias en situación de pobreza', 16000, 'Informe de reducción de pobreza', 5, 10, 2, 8, 16, 48);
+
+INSERT INTO PROYECTO VALUES
+  (66, 'Proyecto Desarrollo de Apps Educativas', 'PROG066', 'Luna Frías', TO_DATE('2024-02-21', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Creación de aplicaciones educativas', 'Apps para apoyar la educación', 15000, 'Informe de desarrollo de apps educativas', 6, 4, 3, 11, 17, 38);
+
+INSERT INTO PROYECTO VALUES
+  (67, 'Proyecto Protección de la Biodiversidad', 'PROG067', 'Luna Ríos', TO_DATE('2024-02-23', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Conservación de especies y hábitats', 'Acciones para proteger la biodiversidad', 18000, 'Informe de protección de biodiversidad', 7, 9, 1, 7, 13, 27);
+
+INSERT INTO PROYECTO VALUES
+  (68, 'Proyecto Promoción de la Lectura', 'PROG068', 'Ricardo Ortega', TO_DATE('2024-02-25', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Fomento de la lectura', 'Bibliotecas comunitarias y actividades de lectura', 13000, 'Informe de promoción de la lectura', 8, 2, 2, 10, 18, 40);
+
+INSERT INTO PROYECTO VALUES
+  (69, 'Proyecto Rehabilitación de Viviendas', 'PROG069', 'Ariadna Sanabria', TO_DATE('2024-02-27', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Reparación y mejora de viviendas', 'Trabajo en hogares necesitados', 14000, 'Informe de rehabilitación de viviendas', 9, 1, 3, 9, 14, 34);
+
+INSERT INTO PROYECTO VALUES
+  (70, 'Proyecto Innovación en Agricultura', 'PROG070', 'Juana Venegas', TO_DATE('2024-02-29', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Tecnologías agrícolas innovadoras', 'Investigación y desarrollo agrícola', 15000, 'Informe de innovación en agricultura', 10, 3, 1, 8, 12, 33);
+
+-- Proyectos del 71 al 80
+INSERT INTO PROYECTO VALUES
+  (71, 'Proyecto Desarrollo de Energía Hidroeléctrica', 'PROG071', 'Carlos Soto', TO_DATE('2024-03-02', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Generación de energía hidroeléctrica', 'Construcción de una central hidroeléctrica', 16000, 'Informe de energía hidroeléctrica', 1, 7, 2, 7, 13, 41);
+
+INSERT INTO PROYECTO VALUES
+  (72, 'Proyecto Salud Materna', 'PROG072', 'Valeria Martínez', TO_DATE('2024-03-04', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Cuidado de la salud de mujeres embarazadas', 'Apoyo a futuras madres', 13000, 'Informe de salud materna', 2, 6, 3, 8, 20, 37);
+
+INSERT INTO PROYECTO VALUES
+  (73, 'Proyecto Educación Digital', 'PROG073', 'Diego Tello', TO_DATE('2024-03-06', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Formación en habilidades digitales', 'Cursos en línea y recursos educativos', 15000, 'Informe de educación digital', 3, 5, 1, 9, 15, 28);
+
+INSERT INTO PROYECTO VALUES
+  (74, 'Proyecto Salud Dental', 'PROG074', 'Mariana López', TO_DATE('2024-03-08', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Atención dental para comunidades', 'Clínicas y servicios odontológicos', 14000, 'Informe de salud dental', 4, 4, 2, 7, 19, 45);
+
+INSERT INTO PROYECTO VALUES
+  (75, 'Proyecto Eliminación de Plagas', 'PROG075', 'Fernando Torres', TO_DATE('2024-03-10', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Control de plagas en áreas urbanas', 'Programas de erradicación de plagas', 16000, 'Informe de eliminación de plagas', 5, 3, 3, 8, 14, 32);
+
+INSERT INTO PROYECTO VALUES
+  (76, 'Proyecto Desarrollo de Software Educativo', 'PROG076', 'Sara Martínez', TO_DATE('2024-03-12', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Creación de software educativo', 'Aplicaciones para el aprendizaje', 15000, 'Informe de desarrollo de software educativo', 6, 2, 1, 11, 17, 36);
+
+INSERT INTO PROYECTO VALUES
+  (77, 'Proyecto Conservación de Ecosistemas', 'PROG077', 'Javier Tello', TO_DATE('2024-03-14', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Preservación de ecosistemas naturales', 'Restauración de áreas naturales', 17000, 'Informe de conservación de ecosistemas', 7, 9, 2, 10, 18, 47);
+
+INSERT INTO PROYECTO VALUES
+  (78, 'Proyecto Promoción de la Ciencia', 'PROG078', 'Lorena Soto', TO_DATE('2024-03-16', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Fomento de la ciencia y la investigación', 'Eventos científicos y programas educativos', 18000, 'Informe de promoción de la ciencia', 8, 8, 1, 7, 16, 26);
+
+INSERT INTO PROYECTO VALUES
+  (79, 'Proyecto Viviendas para Familias en Necesidad', 'PROG079', 'Joaquín Morales', TO_DATE('2024-03-18', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Construcción de viviendas', 'Viviendas asequibles para familias', 16000, 'Informe de viviendas para familias', 9, 1, 3, 9, 15, 35);
+
+INSERT INTO PROYECTO VALUES
+  (80, 'Proyecto Agricultura Ecológica', 'PROG080', 'Olivia Martínez', TO_DATE('2024-03-20', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Cultivo ecológico de alimentos', 'Prácticas agrícolas sostenibles', 14000, 'Informe de agricultura ecológica', 10, 7, 2, 8, 14, 38);
+
+
+
+-- Proyectos del 81 al 100
+INSERT INTO PROYECTO VALUES
+  (81, 'Proyecto Energía Solar en Comunidades Rurales', 'PROG081', 'Eduardo Sánchez', TO_DATE('2024-03-22', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Implementación de energía solar', 'Acceso a energía limpia en zonas rurales', 15000, 'Informe de energía solar', 1, 6, 1, 7, 11, 44);
+
+INSERT INTO PROYECTO VALUES
+  (82, 'Proyecto Salud Infantil', 'PROG082', 'Ana García', TO_DATE('2024-03-24', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Atención médica para niños', 'Servicios de salud pediátrica', 13000, 'Informe de salud infantil', 2, 7, 2, 9, 20, 30);
+
+INSERT INTO PROYECTO VALUES
+  (83, 'Proyecto Educación para Adultos', 'PROG083', 'Carlos Martínez', TO_DATE('2024-03-26', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Educación para adultos', 'Clases y programas de educación continua', 14000, 'Informe de educación para adultos', 3, 9, 3, 10, 18, 38);
+
+INSERT INTO PROYECTO VALUES
+  (84, 'Proyecto Reciclaje en Escuelas', 'PROG084', 'Valentina Soto', TO_DATE('2024-03-28', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Programa de reciclaje en escuelas', 'Promoción de la conciencia ambiental', 12000, 'Informe de reciclaje en escuelas', 4, 5, 1, 8, 15, 41);
+
+INSERT INTO PROYECTO VALUES
+  (85, 'Proyecto Conservación de Bosques', 'PROG085', 'Joaquín López', TO_DATE('2024-03-30', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Preservación de bosques naturales', 'Restauración de áreas forestales', 16000, 'Informe de conservación de bosques', 5, 3, 2, 7, 19, 48);
+
+INSERT INTO PROYECTO VALUES
+  (86, 'Proyecto Tecnología en Educación', 'PROG086', 'Lorena García', TO_DATE('2024-04-01', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Integración de tecnología en aulas', 'Equipamiento y capacitación', 15000, 'Informe de tecnología en educación', 6, 10, 1, 9, 17, 29);
+
+INSERT INTO PROYECTO VALUES
+  (87, 'Proyecto Seguridad Alimentaria', 'PROG087', 'Javier Martínez', TO_DATE('2024-04-03', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Acceso a alimentos seguros', 'Programas de ayuda alimentaria', 17000, 'Informe de seguridad alimentaria', 7, 2, 3, 11, 16, 33);
+
+INSERT INTO PROYECTO VALUES
+  (88, 'Proyecto Promoción de la Cultura', 'PROG088', 'Sara García', TO_DATE('2024-04-05', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Difusión de la cultura local', 'Eventos culturales y actividades', 14000, 'Informe de promoción de la cultura', 8, 8, 1, 7, 12, 42);
+
+INSERT INTO PROYECTO VALUES
+  (89, 'Proyecto Viviendas Sustentables', 'PROG089', 'Diego López', TO_DATE('2024-04-07', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Construcción de viviendas ecológicas', 'Hogares sostenibles', 16000, 'Informe de viviendas sustentables', 9, 4, 2, 8, 13, 27);
+
+INSERT INTO PROYECTO VALUES
+  (90, 'Proyecto Agricultura Orgánica', 'PROG090', 'Ana Sánchez', TO_DATE('2024-04-09', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Cultivo orgánico de alimentos', 'Métodos agrícolas sostenibles', 15000, 'Informe de agricultura orgánica', 10, 1, 3, 9, 14, 36);
+-- Proyectos del 91 al 110
+INSERT INTO PROYECTO VALUES
+  (91, 'Proyecto Tecnología para la Educación Rural', 'PROG091', 'Juan Martínez', TO_DATE('2024-04-11', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Acceso a tecnología en zonas rurales', 'Equipamiento y capacitación', 15000, 'Informe de tecnología en educación rural', 1, 5, 2, 7, 16, 32);
+
+INSERT INTO PROYECTO VALUES
+  (92, 'Proyecto Salud Mental', 'PROG092', 'Andrea López', TO_DATE('2024-04-13', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Apoyo a la salud mental', 'Servicios de salud mental y asesoramiento', 14000, 'Informe de salud mental', 2, 6, 1, 8, 19, 37);
+
+INSERT INTO PROYECTO VALUES
+  (93, 'Proyecto Educación Ambiental', 'PROG093', 'Miguel Soto', TO_DATE('2024-04-15', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Conciencia ambiental y sostenibilidad', 'Programas educativos ambientales', 16000, 'Informe de educación ambiental', 3, 7, 3, 10, 20, 35);
+
+INSERT INTO PROYECTO VALUES
+  (94, 'Proyecto Reciclaje de Electrónicos', 'PROG094', 'Luis Martínez', TO_DATE('2024-04-17', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Reciclaje de dispositivos electrónicos', 'Gestión sostenible de residuos electrónicos', 15000, 'Informe de reciclaje de electrónicos', 4, 8, 2, 9, 18, 44);
+
+INSERT INTO PROYECTO VALUES
+  (95, 'Proyecto Conservación de Humedales', 'PROG095', 'Carmen López', TO_DATE('2024-04-19', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Preservación de humedales', 'Restauración de áreas húmedas', 17000, 'Informe de conservación de humedales', 5, 9, 1, 11, 17, 28);
+
+INSERT INTO PROYECTO VALUES
+  (96, 'Proyecto Tecnología en Escuelas Rurales', 'PROG096', 'Pablo Martínez', TO_DATE('2024-04-21', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Equipamiento tecnológico en escuelas', 'Acceso a tecnología en áreas rurales', 15000, 'Informe de tecnología en escuelas rurales', 6, 10, 3, 7, 13, 34);
+
+INSERT INTO PROYECTO VALUES
+  (97, 'Proyecto Seguridad Alimentaria Infantil', 'PROG097', 'Elena Soto', TO_DATE('2024-04-23', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Alimentos seguros para niños', 'Programas de alimentación infantil', 14000, 'Informe de seguridad alimentaria infantil', 7, 4, 1, 8, 14, 31);
+
+INSERT INTO PROYECTO VALUES
+  (98, 'Proyecto Promoción del Deporte', 'PROG098', 'Fernando Martínez', TO_DATE('2024-04-25', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Fomento del deporte y actividad física', 'Eventos deportivos y programas educativos', 16000, 'Informe de promoción del deporte', 8, 1, 2, 10, 12, 25);
+
+INSERT INTO PROYECTO VALUES
+  (99, 'Proyecto Viviendas Asequibles', 'PROG099', 'Catalina López', TO_DATE('2024-04-27', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Construcción de viviendas asequibles', 'Viviendas asequibles para comunidades', 15000, 'Informe de viviendas asequibles', 9, 5, 3, 11, 15, 27);
+
+INSERT INTO PROYECTO VALUES
+  (100, 'Proyecto Agricultura Sustentable', 'PROG100', 'Roberto Martínez', TO_DATE('2024-04-29', 'YYYY-MM-DD'), TO_DATE('2024-12-31', 'YYYY-MM-DD'), 'Cultivo sustentable de alimentos', 'Métodos agrícolas respetuosos del medio ambiente', 17000, 'Informe de agricultura sustentable', 10, 7, 1, 9, 20, 36);
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-- Ejemplos de inserción en la tabla PLANTILLA
+-- Plantilla de Ingeniería
+INSERT INTO PLANTILLA VALUES (1, 'Plantilla Ingeniería', 'Activo', 'URL1', 1);
+
+-- Plantilla de Medicina
+INSERT INTO PLANTILLA VALUES (2, 'Plantilla Medicina', 'Activo', 'URL2', 2);
+
+-- Plantilla de Ciencias de la Computación
+INSERT INTO PLANTILLA VALUES (3, 'Plantilla Ciencias de la Computación', 'Activo', 'URL3', 3);
+
+-- Plantilla de Ciencias Ambientales
+INSERT INTO PLANTILLA VALUES (4, 'Plantilla Ciencias Ambientales', 'Activo', 'URL4', 4);
+
+-- Plantilla de Administración de Empresas
+INSERT INTO PLANTILLA VALUES (5, 'Plantilla Administración de Empresas', 'Activo', 'URL5', 5);
+
+-- Plantilla de Psicología
+INSERT INTO PLANTILLA VALUES (6, 'Plantilla Psicología', 'Activo', 'URL6', 6);
+
+-- Plantilla de Biología
+INSERT INTO PLANTILLA VALUES (7, 'Plantilla Biología', 'Activo', 'URL7', 7);
+
+-- Plantilla de Educación
+INSERT INTO PLANTILLA VALUES (8, 'Plantilla Educación', 'Activo', 'URL8', 8);
+
+-- Plantilla de Economía
+INSERT INTO PLANTILLA VALUES (9, 'Plantilla Economía', 'Activo', 'URL9', 9);
+
+-- Plantilla de Derecho
+INSERT INTO PLANTILLA VALUES (10, 'Plantilla Derecho', 'Activo', 'URL10', 10);
+
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO FACULTAD VALUES (1, 'FACULTAD DE CIENCIAS HUMANAS Y EDUCACION', 'Activo' );
+
+INSERT INTO FACULTAD VALUES (2, 'FACULTAD DE INGENERIA Y ARQUITECTURA', 'Activo' );
+
+INSERT INTO FACULTAD VALUES (3, 'FACULTAD DE CIENCIAS DE LA SALUD', 'Activo' );
+
+INSERT INTO FACULTAD VALUES (4, 'FACULTAD DE TEOLOGIA', 'Activo' );
+
+INSERT INTO FACULTAD VALUES (5, 'FACULTAD DE CIENCIAS EMPRESARIALES', 'Activo' );
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO ESCUELA VALUES (1,1, 'EP EDUCACION : ESPECIALIDAD PRIMARIA', 'Activo' );
+INSERT INTO ESCUELA VALUES (2,1, 'EP EDUCACION : ESPECIALIDAD LIGUISTICA E INGLES', 'Activo' );
+INSERT INTO ESCUELA VALUES (3,1, 'EP EDUCACION : ESPECIALIDAD MUSICAL Y ARTES', 'Activo' );
+INSERT INTO ESCUELA VALUES (4,1, 'EP EDUCACION : ESPECIALIDAD INICIAL Y PUERICULTURA', 'Activo' );
+INSERT INTO ESCUELA VALUES (5,1, 'EP CIENCIAS DE LA COMUNICACION', 'Activo' );
+INSERT INTO ESCUELA VALUES (6,1, 'EP EDUCACION : EDUCACION FISICA', 'Activo' );
+
+
+INSERT INTO ESCUELA VALUES (7,2, 'EP Ingeniería en Industrías Alimentarias', 'Activo' );
+INSERT INTO ESCUELA VALUES (8,2, 'EP Ingeniería de Sistemas', 'Activo' );
+INSERT INTO ESCUELA VALUES (9,2, 'EP Ingeniería Ambiental', 'Activo' );
+INSERT INTO ESCUELA VALUES (10,2, 'EP Arquitectura', 'Activo' );
+INSERT INTO ESCUELA VALUES (11,2, 'EP Civil', 'Activo' );
+
+INSERT INTO ESCUELA VALUES (12,3, 'EP Enfermería', 'Activo' );
+INSERT INTO ESCUELA VALUES (13,3, 'EP Nutrición Humana', 'Activo' );
+INSERT INTO ESCUELA VALUES (14,3, 'EP Psicología', 'Activo' );
+INSERT INTO ESCUELA VALUES (15,3, 'EP Medicina', 'Activo' );
+
+INSERT INTO ESCUELA VALUES (16,4, 'EP Teología', 'Activo' );
+
+INSERT INTO ESCUELA VALUES (17,5, 'EP Administracion', 'Activo' );
+INSERT INTO ESCUELA VALUES (18,5, 'EP Contabilidad', 'Activo' );
+INSERT INTO ESCUELA VALUES (19,5, 'EP Administracion - Mencion : Gestion Empresarial', 'Activo' );
+INSERT INTO ESCUELA VALUES (20,5, 'EP Administracion y negocions Internaciones', 'Activo' );
+INSERT INTO ESCUELA VALUES (21,5, 'EP Contabilidad y Gestion Tributaria', 'Activo' );
+INSERT INTO ESCUELA VALUES (22,5, 'EP Marketing y Negocios Internacionales', 'Activo' );
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO TIPO_De_CONVENIO VALUES (1, 'CONVENIO1', 'Activo' );
+INSERT INTO TIPO_De_CONVENIO VALUES (2, 'CONVENIO2', 'Activo' );
+INSERT INTO TIPO_De_CONVENIO VALUES (3, 'CONVENIO3', 'Activo' );
+INSERT INTO TIPO_De_CONVENIO VALUES (4, 'CONVENIO4', 'Activo' );
+INSERT INTO TIPO_De_CONVENIO VALUES (5, 'CONVENIO5', 'Activo' );
+INSERT INTO TIPO_De_CONVENIO VALUES (6, 'CONVENIO6', 'Activo' );
+INSERT INTO TIPO_De_CONVENIO VALUES (7, 'CONVENIO7', 'Activo' );
+INSERT INTO TIPO_De_CONVENIO VALUES (8, 'CONVENIO8', 'Activo' );
+INSERT INTO TIPO_De_CONVENIO VALUES (9, 'CONVENIO9', 'Activo' );
+INSERT INTO TIPO_De_CONVENIO VALUES (10, 'CONVENIO10', 'Activo' );
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-- Ejemplos de inserción en la tabla CURSO_ARTICULADO
+-- Curso de Ingeniería de Software
+INSERT INTO CURSO_ARTICULADO VALUES (1, 1, 1, 1, 'Ingeniería de Software', 'Activo');
+
+-- Curso de Medicina Interna
+INSERT INTO CURSO_ARTICULADO VALUES (2, 2, 2, 2, 'Medicina Interna', 'Activo');
+
+-- Curso de Ciencias de la Computación
+INSERT INTO CURSO_ARTICULADO VALUES (3, 3, 3, 3, 'Ciencias de la Computación', 'Activo');
+
+-- Curso de Ciencias Ambientales
+INSERT INTO CURSO_ARTICULADO VALUES (4, 4, 4, 4, 'Ciencias Ambientales', 'Activo');
+
+-- Curso de Administración Estratégica
+INSERT INTO CURSO_ARTICULADO VALUES (5, 5, 5, 5, 'Administración Estratégica', 'Activo');
+
+-- Curso de Psicología Clínica
+INSERT INTO CURSO_ARTICULADO VALUES (6, 6, 6, 6, 'Psicología Clínica', 'Activo');
+
+-- Curso de Biología Molecular
+INSERT INTO CURSO_ARTICULADO VALUES (7, 7, 7, 7, 'Biología Molecular', 'Activo');
+
+-- Curso de Educación Inclusiva
+INSERT INTO CURSO_ARTICULADO VALUES (8, 8, 8, 8, 'Educación Inclusiva', 'Activo');
+
+-- Curso de Economía Internacional
+INSERT INTO CURSO_ARTICULADO VALUES (9, 9, 9, 9, 'Economía Internacional', 'Activo');
+
+-- Curso de Derecho Penal
+INSERT INTO CURSO_ARTICULADO VALUES (10, 1, 1, 1, 'Derecho Penal', 'Activo');
+
+
+
+
+-- Ejemplos de inserción en la tabla CURSO_ARTICULADO con ID generado automáticamente
+-- Curso de Psicología Educativa
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (11, 1, 1, 1, 'Psicología Educativa', 'Activo');
+
+-- Curso de Economía de Mercados Emergentes
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (12, 1, 1, 1, 'Economía de Mercados Emergentes', 'Activo');
+
+-- Curso de Ingeniería de Software Avanzada
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (13, 1, 1, 1, 'Ingeniería de Software Avanzada', 'Activo');
+
+-- Curso de Ciencias Ambientales y Sostenibilidad
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (14, 1, 1, 1, 'Ciencias Ambientales y Sostenibilidad', 'Activo');
+
+-- Curso de Medicina Forense
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (15, 1, 1, 1, 'Medicina Forense', 'Activo');
+
+-- Curso de Administración de Recursos Humanos
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (16, 1, 1, 1, 'Administración de Recursos Humanos', 'Activo');
+
+-- Curso de Ciencias de Datos Aplicadas
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (17, 1, 1, 1, 'Ciencias de Datos Aplicadas', 'Activo');
+
+-- Curso de Educación Musical
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (18, 1, 1, 1, 'Educación Musical', 'Activo');
+
+-- Curso de Derecho Internacional
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (19, 1, 1, 1, 'Derecho Internacional', 'Activo');
+
+-- Curso de Agricultura Orgánica
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (20, 2, 2, 2, 'Agricultura Orgánica', 'Activo');
+
+
+-- Ejemplos de inserción en la tabla CURSO_ARTICULADO con ID generado automáticamente
+-- Curso de Ingeniería Eléctrica
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (21, 2, 2, 2, 'Ingeniería Eléctrica', 'Activo');
+
+-- Curso de Psicología del Deporte
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (22, 2, 2, 2, 'Psicología del Deporte', 'Activo');
+
+-- Curso de Economía del Comercio Internacional
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (23, 2, 2, 2, 'Economía del Comercio Internacional', 'Activo');
+
+-- Curso de Ciencias de la Tierra
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (24, 2, 2, 2, 'Ciencias de la Tierra', 'Activo');
+
+-- Curso de Medicina Legal
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (25, 2, 2, 2, 'Medicina Legal', 'Activo');
+
+-- Curso de Administración de Proyectos
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (26, 2, 2, 2, 'Administración de Proyectos', 'Activo');
+
+-- Curso de Ciencias de la Información
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (27, 2, 2, 2, 'Ciencias de la Información', 'Activo');
+
+-- Curso de Educación Física
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (28, 2, 2, 2, 'Educación Física', 'Activo');
+
+-- Curso de Derecho Penal Internacional
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (29, 2, 2, 2, 'Derecho Penal Internacional', 'Activo');
+
+-- Curso de Agricultura Sostenible
+INSERT INTO CURSO_ARTICULADO (id_CURSO_ARTICULADO, id_DOCENTE, id_ESCUELA, id_PERSONA, NOMBRE, ESTADO) VALUES (30, 3, 3, 3, 'Agricultura Sostenible', 'Activo');
+
+
+
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO SEMESTRE VALUES (1, '2020-1', 'Activo');
+INSERT INTO SEMESTRE VALUES (2, '2020-2', 'Activo');
+INSERT INTO SEMESTRE VALUES (3, '2021-1', 'Activo');
+INSERT INTO SEMESTRE VALUES (4, '2021-2', 'Activo');
+INSERT INTO SEMESTRE VALUES (5, '2022-1', 'Activo');
+INSERT INTO SEMESTRE VALUES (6, '2022-2', 'Activo');
+INSERT INTO SEMESTRE VALUES (7, '2023-1', 'Activo');
+INSERT INTO SEMESTRE VALUES (8, '2023-2', 'Activo');
+INSERT INTO SEMESTRE VALUES (9, '2024-1', 'Activo');
+INSERT INTO SEMESTRE VALUES (10, '2024-2', 'Activo');
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO ESTADO VALUES (1, 'ESTADO1');
+INSERT INTO ESTADO VALUES (2, 'ESTADO2');
+INSERT INTO ESTADO VALUES (3, 'ESTADO3');
+
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO ROL_NEGOCIO VALUES (1, 'Lider', 'Activo');
+INSERT INTO ROL_NEGOCIO VALUES (2, 'Instructor', 'Activo');
+INSERT INTO ROL_NEGOCIO VALUES (3, 'Monitor', 'Activo');
+INSERT INTO ROL_NEGOCIO VALUES (4, 'Camarografo', 'Activo');
+INSERT INTO ROL_NEGOCIO VALUES (5, 'Analista', 'Activo');
+INSERT INTO ROL_NEGOCIO VALUES (6, 'EJEMPLO', 'Activo');
+INSERT INTO ROL_NEGOCIO VALUES (7, 'OBRERO', 'Activo');
+INSERT INTO ROL_NEGOCIO VALUES (8, 'DE YAPA', 'Activo');
+INSERT INTO ROL_NEGOCIO VALUES (9, 'NOTA ES NOTA', 'Activo');
+INSERT INTO ROL_NEGOCIO VALUES (10, 'DISEÑADOR', 'Activo');
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO CICLO VALUES (1, '1', 'Activo',1);
+INSERT INTO CICLO VALUES (2, '2', 'Activo',1);
+INSERT INTO CICLO VALUES (3, '3', 'Activo',1);
+INSERT INTO CICLO VALUES (4, '4', 'Activo',1);
+INSERT INTO CICLO VALUES (5, '5', 'Activo',1);
+INSERT INTO CICLO VALUES (6, '6', 'Activo',1);
+INSERT INTO CICLO VALUES (7, '7', 'Activo',1);
+INSERT INTO CICLO VALUES (8, '8', 'Activo',1);
+INSERT INTO CICLO VALUES (9, '9', 'Activo',1);
+INSERT INTO CICLO VALUES (10, '10', 'Activo',1);
+INSERT INTO CICLO VALUES (11, '11', 'Activo',1);
+INSERT INTO CICLO VALUES (12, '12', 'Activo',1);
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO GRUPO_UNIV VALUES (1, '1', 'Activo');
+INSERT INTO GRUPO_UNIV VALUES (2, '2', 'Activo');
+INSERT INTO GRUPO_UNIV VALUES (3, '3', 'Activo');
+INSERT INTO GRUPO_UNIV VALUES (4, '4', 'Activo');
+INSERT INTO GRUPO_UNIV VALUES (5, '5', 'Activo');
+INSERT INTO GRUPO_UNIV VALUES (6, '6', 'Activo');
+INSERT INTO GRUPO_UNIV VALUES (7, '7', 'Activo');
+INSERT INTO GRUPO_UNIV VALUES (8, '8', 'Activo');
+INSERT INTO GRUPO_UNIV VALUES (9, '9', 'Activo');
+INSERT INTO GRUPO_UNIV VALUES (10, '10', 'Activo');
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO DOCENTE VALUES (1, 1, 'Activo');
+INSERT INTO DOCENTE VALUES (2, 2, 'Activo');
+INSERT INTO DOCENTE VALUES (3, 3, 'Activo');
+INSERT INTO DOCENTE VALUES (4, 4, 'Activo');
+INSERT INTO DOCENTE VALUES (5, 5, 'Activo');
+INSERT INTO DOCENTE VALUES (6, 6, 'Activo');
+INSERT INTO DOCENTE VALUES (7, 7, 'Activo');
+INSERT INTO DOCENTE VALUES (8, 8, 'Activo');
+INSERT INTO DOCENTE VALUES (9, 9, 'Activo');
+INSERT INTO DOCENTE VALUES (10, 10, 'Activo');
+INSERT INTO DOCENTE VALUES (11, 11, 'Activo');
+INSERT INTO DOCENTE VALUES (12, 12, 'Activo');
+INSERT INTO DOCENTE VALUES (13, 13, 'Activo');
+INSERT INTO DOCENTE VALUES (14, 14, 'Activo');
+INSERT INTO DOCENTE VALUES (15, 15, 'Activo');
+INSERT INTO DOCENTE VALUES (16, 16, 'Activo');
+INSERT INTO DOCENTE VALUES (17, 17, 'Activo');
+INSERT INTO DOCENTE VALUES (18, 18, 'Activo');
+INSERT INTO DOCENTE VALUES (19, 19, 'Activo');
+INSERT INTO DOCENTE VALUES (20, 20, 'Activo');
+INSERT INTO DOCENTE VALUES (21, 21, 'Activo');
+INSERT INTO DOCENTE VALUES (22, 22, 'Activo');
+INSERT INTO DOCENTE VALUES (23, 23, 'Activo');
+INSERT INTO DOCENTE VALUES (24, 24, 'Activo');
+INSERT INTO DOCENTE VALUES (25, 25, 'Activo');
+INSERT INTO DOCENTE VALUES (26, 26, 'Activo');
+INSERT INTO DOCENTE VALUES (27, 27, 'Activo');
+INSERT INTO DOCENTE VALUES (28, 28, 'Activo');
+INSERT INTO DOCENTE VALUES (29, 29, 'Activo');
+INSERT INTO DOCENTE VALUES (30, 30, 'Activo');
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO USUARIO VALUES (1, 'admin','$2a$10$ul09ntdhcw7jFnuZszFORuUF0YPPqS2yRLDWJPoyKmBnr7PTBUWyO',1, 'Activo');
+INSERT INTO USUARIO VALUES (2, 'estudiante','$2a$10$wokwoJb4vB6WlEhgLtlKReOqjUFBAiJDo9PIslIsgOMfUezpXs1bW',2, 'Activo');
+INSERT INTO USUARIO VALUES (3, 'coordinador','$2a$10$M14qT3Zr0RTuqKOjTQSIUOtJ4QeiWnQy9Wr0FL0RLxc5ZD6KbJeIK',3, 'Activo');
+INSERT INTO USUARIO VALUES (4, 'docente','$2a$10$4VHUtArfFVcuAMW.XVZzaehfFVqV0GZuJxBozdrssbaE7LB7rm54i',4, 'Activo');
+INSERT INTO USUARIO VALUES (5, 'director','$2a$10$DkEf1O2ARnCfrNVGBQiX0OVZkKBXGYtcMfMtMctUUIdHqVTyeEwPC',5, 'Activo');
+INSERT INTO USUARIO VALUES (6, 'USERNAME6','PASSOWORD6',6, 'Activo');
+INSERT INTO USUARIO VALUES (7, 'USERNAME7','PASSOWORD7',7, 'Activo');
+INSERT INTO USUARIO VALUES (8, 'USERNAME8','PASSOWORD8',8, 'Activo');
+INSERT INTO USUARIO VALUES (9, 'USERNAME9','PASSOWORD9',9, 'Activo');
+INSERT INTO USUARIO VALUES (10, 'USERNAME10','PASSOWORD10',10, 'Activo');
+INSERT INTO USUARIO VALUES (11, 'USERNAME11','PASSOWORD11',11, 'Activo');
+INSERT INTO USUARIO VALUES (12, 'USERNAME12','PASSOWORD12',12, 'Activo');
+INSERT INTO USUARIO VALUES (13, 'USERNAME13','PASSOWORD13',13, 'Activo');
+INSERT INTO USUARIO VALUES (14, 'USERNAME14','PASSOWORD14',14, 'Activo');
+INSERT INTO USUARIO VALUES (15, 'USERNAME15','PASSOWORD15',15, 'Activo');
+INSERT INTO USUARIO VALUES (16, 'USERNAME16','PASSOWORD16',16, 'Activo');
+INSERT INTO USUARIO VALUES (17, 'USERNAME17','PASSOWORD17',17, 'Activo');
+INSERT INTO USUARIO VALUES (18, 'USERNAME18','PASSOWORD18',18, 'Activo');
+INSERT INTO USUARIO VALUES (19, 'USERNAME19','PASSOWORD19',19, 'Activo');
+INSERT INTO USUARIO VALUES (20, 'USERNAME20','PASSOWORD20',20, 'Activo');
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO RECURSO VALUES (1, 'RECURSOX','URL','Activo',3);
+INSERT INTO RECURSO VALUES (2, 'RECURSOX','URL','Activo',4);
+INSERT INTO RECURSO VALUES (3, 'RECURSOX','URL','Activo',2);
+INSERT INTO RECURSO VALUES (4, 'RECURSOX','URL','Activo',1);
+INSERT INTO RECURSO VALUES (5, 'RECURSOX','URL','Activo',1);
+INSERT INTO RECURSO VALUES (6, 'RECURSOX','URL','Activo',1);
+INSERT INTO RECURSO VALUES (7, 'RECURSOX','URL','Activo',1);
+INSERT INTO RECURSO VALUES (8, 'RECURSOX','URL','Activo',2);
+INSERT INTO RECURSO VALUES (9, 'RECURSOX','URL','Activo',26);
+INSERT INTO RECURSO VALUES (10, 'RECURSOX','URL','Activo',33);
+INSERT INTO RECURSO VALUES (11, 'RECURSOX','URL','Activo',89);
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO ROL_PROYECTO VALUES (1,5,'Descripcion 1',1,1,'Activo');
+INSERT INTO ROL_PROYECTO VALUES (2,5,'Descripcion 1',2,2,'Activo');
+INSERT INTO ROL_PROYECTO VALUES (3,5,'Descripcion 1',3,3,'Activo');
+INSERT INTO ROL_PROYECTO VALUES (4,5,'Descripcion 1',4,4,'Activo');
+INSERT INTO ROL_PROYECTO VALUES (5,5,'Descripcion 1',5,5,'Activo');
+INSERT INTO ROL_PROYECTO VALUES (6,5,'Descripcion 1',6,6,'Activo');
+INSERT INTO ROL_PROYECTO VALUES (7, 5, 'Descripción 2', 6, 3, 'Activo');
+INSERT INTO ROL_PROYECTO VALUES (8, 5, 'Descripción 3', 6, 5, 'Activo');
+INSERT INTO ROL_PROYECTO VALUES (9, 5, 'Descripción 4', 6, 6, 'Activo');
+INSERT INTO ROL_PROYECTO VALUES (10, 5, 'Descripción 5', 1, 1, 'Activo');
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO ROL_PROYECTO_ENCARGADO VALUES (1,'Activo',1,1);
+INSERT INTO ROL_PROYECTO_ENCARGADO VALUES (2,'Activo',2,2);
+INSERT INTO ROL_PROYECTO_ENCARGADO VALUES (3,'Activo',3,3);
+INSERT INTO ROL_PROYECTO_ENCARGADO VALUES (4,'Activo',4,4);
+INSERT INTO ROL_PROYECTO_ENCARGADO VALUES (5,'Activo',5,5);
+INSERT INTO ROL_PROYECTO_ENCARGADO VALUES (6,'Activo',6,6);
+INSERT INTO ROL_PROYECTO_ENCARGADO VALUES (7,'Activo',7,7);
+INSERT INTO ROL_PROYECTO_ENCARGADO VALUES (8,'Activo',8,8);
+INSERT INTO ROL_PROYECTO_ENCARGADO VALUES (9,'Activo',9,9);
+INSERT INTO ROL_PROYECTO_ENCARGADO VALUES (10,'Activo',10,10);
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+INSERT INTO ACTIVIDAD_PARTICIPANTE VALUES (1,'Activo',1,1);
+INSERT INTO ACTIVIDAD_PARTICIPANTE VALUES (2,'Activo',2,2);
+INSERT INTO ACTIVIDAD_PARTICIPANTE VALUES (3,'Activo',3,3);
+INSERT INTO ACTIVIDAD_PARTICIPANTE VALUES (4,'Activo',4,4);
+INSERT INTO ACTIVIDAD_PARTICIPANTE VALUES (5,'Activo',5,5);
+INSERT INTO ACTIVIDAD_PARTICIPANTE VALUES (6,'Activo',6,6);
+INSERT INTO ACTIVIDAD_PARTICIPANTE VALUES (7,'Activo',7,7);
+INSERT INTO ACTIVIDAD_PARTICIPANTE VALUES (8,'Activo',8,8);
+INSERT INTO ACTIVIDAD_PARTICIPANTE VALUES (9,'Activo',9,9);
+INSERT INTO ACTIVIDAD_PARTICIPANTE VALUES (10,'Activo',10,10);
+
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO ROL_SISTEMA_ACCESOS VALUES (1,2,null,'Activo');
+INSERT INTO ROL_SISTEMA_ACCESOS VALUES (2,3,null,'Activo');
+INSERT INTO ROL_SISTEMA_ACCESOS VALUES (3,4,null,'Activo');
+INSERT INTO ROL_SISTEMA_ACCESOS VALUES (4,5,null,'Activo');
+INSERT INTO ROL_SISTEMA_ACCESOS VALUES (5,6,null,'Activo');
+INSERT INTO ROL_SISTEMA_ACCESOS VALUES (6,7,null,'Activo');
+INSERT INTO ROL_SISTEMA_ACCESOS VALUES (7,8,null,'Activo');
+INSERT INTO ROL_SISTEMA_ACCESOS VALUES (8,9,null,'Activo');
+INSERT INTO ROL_SISTEMA_ACCESOS VALUES (9,1,null,'Activo');
+INSERT INTO ROL_SISTEMA_ACCESOS VALUES (10,10,null,'Activo');
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+INSERT INTO ESTUDIANTE VALUES (1,1,'220134',24,'Activo',4,1);
+INSERT INTO ESTUDIANTE VALUES (2,2,'220134',24,'Activo',4,2);
+INSERT INTO ESTUDIANTE VALUES (3,3,'220134',24,'Activo',4,3);
+INSERT INTO ESTUDIANTE VALUES (4,4,'220134',24,'Activo',4,2);
+INSERT INTO ESTUDIANTE VALUES (5,5,'220134',24,'Activo',4,3);
+INSERT INTO ESTUDIANTE VALUES (6,6,'220134',24,'Activo',4,1);
+INSERT INTO ESTUDIANTE VALUES (7,7,'220134',24,'Activo',4,2);
+INSERT INTO ESTUDIANTE VALUES (8,8,'220134',24,'Activo',4,1);
+INSERT INTO ESTUDIANTE VALUES (9,9,'220134',24,'Activo',4,4);
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO ENCARGADO VALUES (1,'CARLOS','ROL','ACTIVO',1);
+INSERT INTO ENCARGADO VALUES (2,'PEREZ','ROL','ACTIVO',2);
+INSERT INTO ENCARGADO VALUES (3,'ALEXIS','ROL','ACTIVO',3);
+INSERT INTO ENCARGADO VALUES (4,'LUIS','ROL','ACTIVO',4);
+INSERT INTO ENCARGADO VALUES (5,'MAY','ROL','ACTIVO',5);
+INSERT INTO ENCARGADO VALUES (6,'BRAYAN','ROL','ACTIVO',6);
+INSERT INTO ENCARGADO VALUES (7,'CARLOS','ROL','ACTIVO',7);
+INSERT INTO ENCARGADO VALUES (8,'CARLOS','ROL','ACTIVO',8);
+INSERT INTO ENCARGADO VALUES (9,'CARLOS','ROL','ACTIVO',9);
+INSERT INTO ENCARGADO VALUES (10,'CARLOS','ROL','ACTIVO',9);
+INSERT INTO ENCARGADO VALUES (11,'CARLOS','ROL','ACTIVO',9);
+INSERT INTO ENCARGADO VALUES (12,'CARLOS','ROL','ACTIVO',9);
+INSERT INTO ENCARGADO VALUES (13,'CARLOS','ROL','ACTIVO',9);
+INSERT INTO ENCARGADO VALUES (14,'CARLOS','ROL','ACTIVO',9);
+INSERT INTO ENCARGADO VALUES (15,'CARLOS','ROL','ACTIVO',9);
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-- Ejemplos de inserción en la tabla PARTICIPANTE
+INSERT INTO PARTICIPANTE VALUES ('ACTIVO', 1, 1, 1, 1, 1, 1, 1);
+INSERT INTO PARTICIPANTE VALUES ('ACTIVO', 2, 2, 2, 2, 2, 2, 2);
+INSERT INTO PARTICIPANTE VALUES ('ACTIVO', 3, 3, 3, 3, 3, 3, 3);
+INSERT INTO PARTICIPANTE VALUES ('ACTIVO', 4, 4, 4, 4, 4, 4, 4);
+INSERT INTO PARTICIPANTE VALUES ('ACTIVO', 5, 5, 5, 5, 5, 5, 5);
+INSERT INTO PARTICIPANTE VALUES ('ACTIVO', 6, 6, 6, 6, 6, 6, 6);
+INSERT INTO PARTICIPANTE VALUES ('ACTIVO', 7, 7, 7, 7, 7, 7, 7);
+INSERT INTO PARTICIPANTE VALUES ('ACTIVO', 8, 8, 8, 8, 8, 8, 8);
+INSERT INTO PARTICIPANTE VALUES ('ACTIVO', 9, 9, 9, 9, 9, 9, 9);
+INSERT INTO PARTICIPANTE VALUES ('ACTIVO', 10, 3, 4, 5, 6, 7, 8);
+
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-- Ejemplos de inserción en la tabla ACTIVIDAD
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (1, 'Carrera de Desarrollo Personal', TO_DATE('2023-11-05', 'YYYY-MM-DD'), 'Activa', 2, 2);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (2, 'Taller de Desarrollo Personal', TO_DATE('2023-11-05', 'YYYY-MM-DD'), 'Activa', 2, 2);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (3, 'Conferencia sobre Medio Ambiente', TO_DATE('2023-11-10', 'YYYY-MM-DD'), 'Activa', 3, 3);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (4, 'Torneo de Fútbol Estudiantil', TO_DATE('2023-11-15', 'YYYY-MM-DD'), 'Activa', 4, 4);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (5, 'Taller de Programación', TO_DATE('2023-11-20', 'YYYY-MM-DD'), 'Activa', 5, 5);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (6, 'Charla de Salud Mental', TO_DATE('2023-11-25', 'YYYY-MM-DD'), 'Activa', 6, 6);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (7, 'Concierto Benéfico', TO_DATE('2023-12-01', 'YYYY-MM-DD'), 'Activa', 7, 7);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (8, 'Feria de Ciencias', TO_DATE('2023-12-05', 'YYYY-MM-DD'), 'Activa', 8, 8);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (9, 'Competencia de Robótica', TO_DATE('2023-12-10', 'YYYY-MM-DD'), 'Activa', 9, 9);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (10, 'Taller de Arte Urbano', TO_DATE('2023-12-15', 'YYYY-MM-DD'), 'Activa', 10, 10);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (11, 'Carrera Solidaria', TO_DATE('2023-12-20', 'YYYY-MM-DD'), 'Activa', 11, 11);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (12, 'Exposición de Arte', TO_DATE('2023-12-25', 'YYYY-MM-DD'), 'Activa', 12, 12);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (13, 'Simposio de Tecnología', TO_DATE('2023-12-30', 'YYYY-MM-DD'), 'Activa', 13, 13);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (14, 'Torneo de Ajedrez', TO_DATE('2024-01-05', 'YYYY-MM-DD'), 'Activa', 14, 14);
+INSERT INTO ACTIVIDAD (id_ACTIVIDAD, NOMBRE, FECHA, ESTADO, id_PROYECTO, id_ENCARGADO) VALUES (15, 'Conferencia de Ciencia e Innovación', TO_DATE('2024-01-10', 'YYYY-MM-DD'), 'Activa', 15, 15);
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-- Ejemplos de inserción en la tabla PERSONA
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (1, 'Juan Pérez', 'Activo', '1234567', 1);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (2, 'María López', 'Activo', '7654321', 2);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (3, 'Carlos Rodríguez', 'Activo', '2345671', 3);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (4, 'Ana Martínez', 'Activo', '6543217', 4);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (5, 'Luis González', 'Activo', '3456712', 5);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (6, 'Laura Sánchez', 'Activo', '4567123', 6);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (7, 'Pedro Fernández', 'Activo', '5671234', 7);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (8, 'Marta Ramírez', 'Activo', '6712345', 8);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (9, 'Javier Torres', 'Activo', '7123456', 9);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (10, 'Sofía Jiménez', 'Activo', '1234567', 10);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (11, 'Carlos López', 'Activo', '2345678', 9);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (12, 'María Rodríguez', 'Activo', '3456789', 8);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (13, 'Alejandro Pérez', 'Activo', '4567890', 7);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (14, 'Luisa García', 'Activo', '5678901', 6);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (15, 'Javier Martínez', 'Activo', '6789012', 5);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (16, 'Isabel Sánchez', 'Activo', '7890123', 4);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (17, 'Fernando Torres', 'Activo', '8901234', 3);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (18, 'Sofía Jiménez', 'Activo', '9012345', 2);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (19, 'Andrés Mendoza', 'Activo', '0123456', 1);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (20, 'Ana Ramírez', 'Activo', '9876543', 10);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (21, 'Roberto Silva', 'Activo', '8765432', 9);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (22, 'Mónica Pérez', 'Activo', '7654321', 8);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (23, 'Daniel García', 'Activo', '6543210', 7);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (24, 'Laura González', 'Activo', '5432109', 6);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (25, 'Juan Sánchez', 'Activo', '4321098', 5);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (26, 'Elena Pérez', 'Activo', '3210987', 4);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (27, 'Raúl López', 'Activo', '2109876', 3);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (28, 'Carmen Torres', 'Activo', '1098765', 2);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (29, 'Miguel García', 'Activo', '0987654', 1);
+INSERT INTO PERSONA (id_PERSONA, NOMBRE, ESTADO, DNI, id_ROL_SISTEMA) VALUES (30, 'Patricia Martínez', 'Activo', '9876543', 10);
+
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+INSERT INTO ROL_SISTEMA VALUES (1,'ADMIN','Activo',1);
+INSERT INTO ROL_SISTEMA VALUES (2,'ESTUDIANTE','Activo',2);
+INSERT INTO ROL_SISTEMA VALUES (3,'COORDINADOR','Activo',3);
+INSERT INTO ROL_SISTEMA VALUES (4,'DOCENTE','Activo',4);
+INSERT INTO ROL_SISTEMA VALUES (5,'DIRECTOR','Activo',5);
+INSERT INTO ROL_SISTEMA VALUES (6,'Coordinador','Activo',6);
+INSERT INTO ROL_SISTEMA VALUES (7,'Coordinador','Activo',7);
+INSERT INTO ROL_SISTEMA VALUES (8,'Coordinador','Activo',8);
+INSERT INTO ROL_SISTEMA VALUES (9,'Coordinador','Activo',9);
+INSERT INTO ROL_SISTEMA VALUES (10,'Coordinador','Activo',10);
+
+
+
+----------------------------------------------------------------------------------Termina-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (1, 'Gestionar proyecto', 'home/modulo/1', NULL, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (2, 'Ejecutar proyecto', 'home/modulo/2', NULL, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (3, 'Consultar horas', 'home/modulo/3', NULL, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (4, 'Seguridad', 'home/modulo/4', NULL, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (5, 'Configuración', 'home/modulo/5', NULL, 'ACTIVO');
+
+-- Rutas Hijas del primer Módulo
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (6, 'Listar Plantillas', 'home/modulo/1/listar-plantilla', 1, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (7, 'Agregar plantilla', 'home/modulo/1/agregar-plantilla', 1, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (8, 'Listar Proyectos', 'home/modulo/1/listar-proyectos', 1, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (9, 'Agregar proyecto', 'home/modulo/1/agregar-proyecto', 1, 'ACTIVO');
+
+-- Rutas Hijas de Listar Proyectos
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (10, 'General', 'home/modulo/1/listar-proyectos/editar/general', 8, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (11, 'Roles', 'home/modulo/1/listar-proyectos/editar/roles', 8, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (12, 'Actividad', 'home/modulo/1/listar-proyectos/editar/actividad', 8, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (13, 'Participante', 'home/modulo/1/listar-proyectos/editar/participante', 8, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (14, 'Encargado', 'home/modulo/1/listar-proyectos/editar/encargado', 8, 'ACTIVO');
+
+-- Rutas Hijas de Agregar Proyecto
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (15, 'Datos Generales', 'home/modulo/1/agregar-proyecto/general', 9, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (16, 'Roles', 'home/modulo/1/agregar-proyecto/roles', 9, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (17, 'Actividad', 'home/modulo/1/agregar-proyecto/actividad', 9, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (18, 'Participante', 'home/modulo/1/agregar-proyecto/participante', 9, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (19, 'Encargado', 'home/modulo/1/agregar-proyecto/encargado', 9, 'ACTIVO');
+
+---------------------
+-- Rutas Hijas del Segundo Módulo
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (20, 'Proyecto', 'home/modulo/2/lista-proyecto', 2, 'ACTIVO');
+
+-- Rutas Hijas de Proyectos
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (21, 'Grupos', 'home/modulo/2/lista-proyecto/proyecto/grupos', 20, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (22, 'Actividades', 'home/modulo/2/lista-proyecto/proyecto/actividades', 20, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (23, 'Seguimiento', 'home/modulo/2/lista-proyecto/proyecto/seguimiento', 20, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (24, 'Asignar-Horas', 'home/modulo/2/lista-proyecto/proyecto/asignar-horas', 20, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (25, 'Informe-Final', 'home/modulo/2/lista-proyecto/proyecto/informe-final', 20, 'ACTIVO');
+
+-- Rutas del Módulo 3
+/*
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (26, 'Horas del alumno', 'home/modulo/3/horas', 3, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE,ESTADO)
+VALUES (27, 'Horas detalle', 'home/modulo/3/horas-detalles', 3, 'ACTIVO');
+
+--Rutas del módulo 4
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE,ESTADO)
+VALUES (28, 'Asignar coordinador', 'home/modulo/4/asignar-coordinador', 4, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE,ESTADO)
+VALUES (29, 'Crear roles del sistema', 'home/modulo/4/crear-roles-sistema', 4, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE,ESTADO)
+VALUES (30,'Listar roles del sistema', 'home/modulo/4/listar-roles-sistema', 4, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE,ESTADO)
+VALUES (31, 'Seleccionar privilegios', 'home/modulo/4/asignar-privilegios/seleccionar-privilegios', 9, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE,ESTADO)
+VALUES (32, 'Asignar privilegios', 'home/modulo/4/asignar-privilegios', 4, 'ACTIVO');  
+
+--Rutas del módulo 5
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (33, 'Mantener rol negocio', 'home/modulo/5/rol-negocio', 22, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (34, 'Mantener estado', 'home/modulo/5/estado', 22, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (35, 'Mantener curso articulado', 'home/modulo/5/curso-articulado', 22, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (36, 'Mantener semestre', 'home/modulo/5/semestre', 22, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (37, 'Mantener facultad', 'home/modulo/5/facultad', 22, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (38, 'Mantener escuela', 'home/modulo/5/escuela', 22, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (39, 'Mantener ciclo', 'home/modulo/5/ciclo', 22, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (40, 'Mantener tipo convenio', 'home/modulo/5/tipo-convenio', 22, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (41, 'Mantener docente', 'home/modulo/5/docente', 22, 'ACTIVO');
+
+INSERT INTO ACCESOS (ID_ACCESOS, NOMBRE, URL, ID_ACCESOS_PADRE, ESTADO)
+VALUES (42, 'Mantener usuario', 'home/modulo/5/usuario', 22, 'ACTIVO');
+
+
+insert into USUARIO_ACCESOS VALUES (1,1,1);
+insert into USUARIO_ACCESOS VALUES (2,2,2);
+insert into USUARIO_ACCESOS VALUES (3,3,3);
+insert into USUARIO_ACCESOS VALUES (4,4,4);
+insert into USUARIO_ACCESOS VALUES (5,5,5);
+
+
+INSERT INTO USUARIO_ROL_SISTEMA VALUES (1, 1, 1);
+INSERT INTO USUARIO_ROL_SISTEMA VALUES (2, 2, 2);
+INSERT INTO USUARIO_ROL_SISTEMA VALUES (3, 3, 3);
+INSERT INTO USUARIO_ROL_SISTEMA VALUES (4, 4, 4);
+INSERT INTO USUARIO_ROL_SISTEMA VALUES (5, 5, 5);
+
+
+ALTER TABLE PROYECTO
+ADD LUGAR VARCHAR2(1000);
+
+UPDATE PROYECTO
+SET LUGAR = 'CARAPONGO';
+
+
+COMMIT;
